@@ -9,6 +9,8 @@
 
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
 
+  <depend>aev_msgs</depend>
+  <depend>aev_primitive_msgs</depend>
   <depend>actionlib_msgs</depend>
   <depend>action_msgs</depend>
   <depend>diagnostic_msgs</depend>

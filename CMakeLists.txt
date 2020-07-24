@@ -16,12 +16,13 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # find dependencies
+find_package(aev_msgs REQUIRED)
+find_package(aev_primitive_msgs REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_ros REQUIRED)
 find_package(actionlib_msgs REQUIRED)
 find_package(action_msgs REQUIRED)
 find_package(diagnostic_msgs REQUIRED)
-find_package(gazebo_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
 find_package(map_msgs REQUIRED)
@@ -92,10 +93,11 @@ target_link_libraries(simExtROS2Interface ${COPPELIASIM_LIBRARIES})
 #ament_target_dependencies(simExtROS2Interface rclcpp)
 ament_target_dependencies(
     simExtROS2Interface
+    "aev_msgs"
+    "aev_primitive_msgs"
     "actionlib_msgs"
     "action_msgs"
     "diagnostic_msgs"
-    "gazebo_msgs"
     "geometry_msgs"
     "lifecycle_msgs"
     "map_msgs"

@@ -1,3 +1,10 @@
+aev_msgs/CurvatureCommand
+aev_msgs/DistanceCommand
+aev_msgs/DistanceCurvatureCommand
+aev_msgs/SpeedCommand
+aev_msgs/SpeedCurvatureCommand
+aev_primitive_msgs/Float
+aev_primitive_msgs/Bmask
 builtin_interfaces/Duration
 builtin_interfaces/Time
 diagnostic_msgs/DiagnosticArray
